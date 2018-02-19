@@ -1,0 +1,71 @@
+html {
+  text-align: center;
+}
+
+#banner {
+  width: 400px;
+  height: 100px;
+}
+
+#greeting {
+  text-align: center;
+  line-height: 1.5;
+  display: block;
+  margin: auto;
+  width: 600px;
+}
+
+#flag {
+  display: block;
+  width: 600px;
+  height: 250px;
+  border: 5px solid black;
+  margin: 10px auto;
+}
+
+#firefox {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+}
+
+#map {
+  display: block;
+  width: 600px;
+  height: 450px;
+  border: 5px solid black;
+  margin: 10px auto;
+}
+
+#footer {
+  display: block;
+  width: 600px;
+  margin: 10px auto;
+  color: rgba(0, 0, 255, 0.5);
+}
+
+#footer:active, #flag:hover {
+  color: rgba(0, 255, 255, 0.8);
+  border: 5px ridge rgb(255, 25, 25);
+  padding: 3px;
+}
+
+#nav-bar {
+  border: 8px groove green;
+  width: 600px;
+  padding: 8px 0px;
+  margin: 10px auto;
+}
+
+#nav-bar > * {
+  border: 1px solid green;
+  padding: 4px;
+  margin: 4px;
+}
+
+a:hover {
+  font-family: serif;
+  text-shadow: 0px 0px 5px red;
+}
