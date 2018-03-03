@@ -10,6 +10,8 @@
     <div id="greeting">
       <p>I love Paris in the the springtime.</p>
     </div>
+    
+    <div id="button"></div>
 
     <div id="nav-bar">
       <a href="https://google.com/">google.com</a>
