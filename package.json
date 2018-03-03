@@ -2,9 +2,9 @@
   "name": "cluck",
   "version": "0.1.0",
   "description": "cluck.gq website",
-  "main": "js/script.js",
+  "main": "js/index.js",
   "scripts": {
-    "test": ""
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -13,11 +13,16 @@
   "keywords": [
     "cluck"
   ],
-  "author": "ronny macmaster",
+  "author": "Ronald Macmaster <ronnymacmaster@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.12.9",
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
   }
 }
