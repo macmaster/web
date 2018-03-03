@@ -1,0 +1,23 @@
+{
+  "name": "cluck",
+  "version": "0.1.0",
+  "description": "cluck.gq website",
+  "main": "js/script.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//ronny-macmaster/web.git"
+  },
+  "keywords": [
+    "cluck"
+  ],
+  "author": "ronny macmaster",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
