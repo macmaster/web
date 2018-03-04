@@ -25,6 +25,6 @@
     <div id="footer">©2018 Cluck</div>
 
     <img id="firefox" src="img/firefox.png">
-    <script src="dist/bundle.js"></script>
+    <script src="main.bundle.js"></script>
   </body>
 </html>

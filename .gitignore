@@ -1,5 +1,6 @@
 .old
 .misc
 *.swp
+build
 node_modules
 package-lock.json
