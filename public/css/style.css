@@ -60,12 +60,13 @@ html {
 }
 
 #nav-bar > * {
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  display: inline;
   padding: 4px;
   margin: 4px;
 }
 
-a:hover {
+/* a:hover {
   font-family: serif;
   text-shadow: 0px 0px 5px red;
-}
+} */
