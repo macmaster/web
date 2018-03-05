@@ -6,11 +6,11 @@
   </head>
   <body>
     <img id="banner" src="img/cluck.png">
-
     <div id="greeting">
       <p>I love Paris in the the springtime.</p>
     </div>
-    <div id="button"></div>
+    <div id="clock"></div>
+    
     <div id="nav-bar">
       <?php
         $domains = [ 

@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "material-ui/Button";
 
-export default function CluckButton() {
+export default function Clock() {
   return (
     <Button variant="raised" color="primary">
-      cluck
+      {new Date().toUTCString()}
     </Button>
   );
 }
