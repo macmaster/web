@@ -11,8 +11,13 @@ export default function NavButton(props) {
 }
 
 NavButton.prototype.render = function render() {
+  const style = {
+    background: 'linear-gradient(135deg, red 80%, orange 90%)',
+    textTransform: 'lowercase',
+  };
+
   return (
-    <Button variant="raised" color="primary" href={this.state.href}>
+    <Button style={style} variant="raised" color="primary" href={this.state.href}>
       {this.state.hostname}
     </Button>
   );

@@ -68,6 +68,34 @@ html {
   flex-grow: 2;
 }
 
+#search-bar {
+  margin: 10px auto;
+}
+
+#product-table {
+  display: block;
+  text-align: right;
+  margin: 10px auto;
+  padding: 3px;
+  width: 600px;
+}
+
+#product-table table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px solid purple;
+  width: 100%;
+}
+
+#product-table thead {
+  color: red;
+  text-shadow: 1px 1px 1px purple;
+}
+
+#product-table td, th {
+  border: 1px solid black;
+}
+
 /* a:hover {
   font-family: serif;
   text-shadow: 0px 0px 5px red;
