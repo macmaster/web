@@ -1,0 +1,45 @@
+{
+  "name": "swish",
+  "version": "0.1.0",
+  "description": "swish.gq website",
+  "main": "site/js/index.js",
+  "scripts": {
+    "build": "webpack --config config/webpack.js",
+    "sass": "node-sass --recursive --output site/css site/scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//ronny-macmaster/web.git"
+  },
+  "keywords": [
+    "swish",
+    "dprk"
+  ],
+  "author": "Ronald Macmaster <ronnymacmaster@gmail.com>",
+  "license": "Apache-2.0",
+  "babel": {
+    "presets": [
+      "react",
+      "env"
+    ]
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "material-ui": "^1.0.0-beta.45",
+    "@material-ui/icons": "^1.0.0-beta.43",
+    "popper.js": "^1.12.9",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.9.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.10"
+  }
+}
