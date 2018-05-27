@@ -38,7 +38,6 @@ const styles = theme => ({
 });
 
 VideoTable.prototype.componentDidMount = function componentDidMount() {
-  console.log(this.props);
   setTimeout(() =>
   this.setState((prev, props) => ({
     isLoaded: true,
@@ -47,7 +46,7 @@ VideoTable.prototype.componentDidMount = function componentDidMount() {
 }
 
 VideoTable.prototype.render = function render() {
-  const { classes, callback, elevation } = this.props;
+  const { classes, callback } = this.props;
   const { handleClick } = this.handlers;
 
   let columns = (
@@ -79,7 +78,7 @@ VideoTable.prototype.render = function render() {
   let loading = <p>loading...</p>;
 
   return (
-    <Paper className={classes.root} elevation={elevation || 4}>
+    <Paper className={classes.root}>
       {this.state.isLoaded ? table : loading}
     </Paper>
   );

@@ -48,9 +48,11 @@ NavMenu.prototype.render = function render() {
       <IconButton onClick={handleClick} className={classes.menuButton} color="inherit">
         <MenuIcon />
       </IconButton>
-      <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose.bind(this, null)}>
-        {menuItems}
-      </Menu>
+    {
+      // <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose.bind(this, null)}>
+      //   {menuItems}
+      // </Menu>
+    }
     </div>
   );
 }

@@ -8,18 +8,16 @@ import Typography from "@material-ui/core/Typography";
 
 import NavMenu from "./NavMenu";
 
-Object.setPrototypeOf(NavBar.prototype, React.Component.prototype);
 function NavBar(props) {
   React.Component(props);
 }
 
 const styles = {
   root: {
-    flexGrow: 1,
-    marginBottom: 10,
+    marginBottom: "10px",
   },
-  flex: {
-    flex: 1,
+  title: {
+    flex: "auto",
   },
 };
 
@@ -30,13 +28,12 @@ NavBar.prototype.render = function render() {
     <AppBar className={classes.root}>
       <Toolbar>
         <NavMenu options={options} />
-        <Typography variant="title" color="inherit" className={classes.flex}>
-          {brand}
-        </Typography>
-        <Button color="inherit">Refresh</Button>
+        <Typography variant="title" className={classes.title}
+          color="inherit">{brand}</Typography>
       </Toolbar>
     </AppBar>
   );
 }
 
+Object.setPrototypeOf(NavBar.prototype, React.Component.prototype);
 export default withStyles(styles)(NavBar);

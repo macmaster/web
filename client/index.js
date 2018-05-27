@@ -16,7 +16,7 @@ var navbar = ReactDOM.render(
 
 // Videos Player
 import VideoPlayer from "./VideoPlayer";
-const VIDEO_ROWS = [
+const VIDEOS = [
   { "name": "DPRK Music Video 02", "image": "images/dprk02.jpg", "video": "videos/dprk02.mp4" }, 
   { "name": "DPRK Music Video 03", "image": "images/dprk03.jpg", "video": "videos/dprk03.webm" }, 
   { "name": "DPRK Music Video 04", "image": "images/dprk04.jpg", "video": "videos/dprk04.webm" }, 
@@ -189,26 +189,16 @@ const VIDEO_ROWS = [
   { "name": "DPRK Music Video 172", "image": "images/dprk172.jpg", "video": "videos/dprk172.webm" }, 
 ];
 var player = ReactDOM.render(
-  <VideoPlayer columns={["video"]} rows={VIDEO_ROWS} />,
+  <VideoPlayer columns={["video"]} videos={VIDEOS} />,
   document.getElementById("player")
 );
 
-// // Greeting Message
-// import Greeting from "./Greeting";
-// 
-// let greeting = ReactDOM.render(
-//   <Greeting headline="Welcome" 
-//     elevation={1}
-//     message="You have reached the new swish.gq homepage." />,
-//   document.getElementById("greeting")
+// // Miscellaneous
+// import Icon from "@material-ui/core/Icon";
+// import Grid from "@material-ui/core/Grid";
+// var misc = ReactDOM.render(
+//   <React.Fragment>
+//   </React.Fragment>,
+//   document.getElementById("misc")
 // );
-
-// Miscellaneous
-import Icon from "@material-ui/core/Icon";
-import Grid from "@material-ui/core/Grid";
-var misc = ReactDOM.render(
-  <React.Fragment>
-  </React.Fragment>,
-  document.getElementById("misc")
-);
 
