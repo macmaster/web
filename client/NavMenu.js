@@ -1,8 +1,9 @@
 import React from "react";
-import { withStyles } from "material-ui/styles";
+import { withStyles } from "@material-ui/core/styles";
 
-import IconButton from "material-ui/IconButton";
-import Menu, { MenuItem } from "material-ui/Menu";
+import IconButton from "@material-ui/core/IconButton";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 import MenuIcon from "@material-ui/icons/Menu";
 
 Object.setPrototypeOf(NavMenu.prototype, React.Component.prototype);

@@ -1,7 +1,7 @@
 import React from "react";
 
-import { withStyles } from "material-ui/styles";
-import Typography from "material-ui/Typography";
+import { withStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import VideoTable from "./VideoTable";
 
 Object.setPrototypeOf(VideoPlayer.prototype, React.Component.prototype);
@@ -27,7 +27,7 @@ const style = {
     width: "50%",
   },
   player: {
-    border: "4px solid purple",
+    // border: "4px solid purple",
     width: "100%",
   },
   table: {

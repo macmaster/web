@@ -1,9 +1,12 @@
 import React from "react";
 
-import { withStyles } from "material-ui/styles";
-import Paper from "material-ui/Paper";
-import Table from "material-ui/Table";
-import { TableBody, TableCell, TableHead, TableRow } from "material-ui/Table";
+import { withStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
+import TableCell from "@material-ui/core/TableCell";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
 
 Object.setPrototypeOf(VideoTable.prototype, React.Component.prototype);
 function VideoTable(props) {
@@ -24,6 +27,13 @@ function VideoTable(props) {
 const styles = theme => ({
   root: {
     width: "100%",
+  },
+  title: {
+    textAlign: "center",
+  },
+  thumbnail: {
+    textAlign: "center",
+    display: "block",
   },
 });
 
@@ -49,10 +59,12 @@ VideoTable.prototype.render = function render() {
   let rows = this.state.rows.map(
     (row, index) => 
       <TableRow key={index}>
-        <TableCell>{row.video}</TableCell>
-        <TableCell>
-          <a onClick={handleClick.bind(null, row.name, row.video)} 
-            href={row.video}>{row.name}</a>
+        <TableCell className={classes.cell}>
+          <a onClick={handleClick.bind(null, row.name, row.video)}
+            className={classes.thumbnail} href={row.video}> 
+            <h2 className={classes.title}>{row.name}</h2>
+            <img src={row.image} /> 
+          </a>
         </TableCell>
       </TableRow>
   );
