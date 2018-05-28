@@ -1,4 +1,4 @@
-.sw*
+.*.s??
 node_modules
 package-lock.json
 site/videos/*
