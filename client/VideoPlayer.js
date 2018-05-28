@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 
-import VideoTable from "./VideoTable";
+import VideoGrid from "./VideoGrid";
 
 function VideoPlayer(props) {
   React.Component(props);
@@ -32,11 +32,11 @@ const style = {
   root: {
     display: "block",
     margin: "10px auto",
-    width: "650px",
+    width: "648px",
   },
   paper: {
-    padding: "10px",
     margin: "10px auto",
+    padding: "10px",
   },
   header: {
     display: "flex",
@@ -80,10 +80,7 @@ VideoPlayer.prototype.render = function render() {
           Download: <a href={video.video} download>{video.video}</a>
         </Typography>
       </Paper>
-      {
-        // <VideoTable ref="table" callback={updateVideo}
-        // columns={columns} rows={videos} />
-      } 
+      <VideoGrid callback={updateVideo} videos={videos} />
     </div>
   );
 }
