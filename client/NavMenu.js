@@ -15,6 +15,7 @@ function NavMenu(props) {
 
   this.handlers = {
     handleClick: (e) => {
+      window.scrollTo(0, 0);
       this.setState({ anchorEl: this.props.anchor || e.currentTarget});
     },
     handleClose: (option, e) => {
