@@ -5,6 +5,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuIcon from "@material-ui/icons/Menu";
+import HomeIcon from "@material-ui/icons/Home";
 
 Object.setPrototypeOf(NavMenu.prototype, React.Component.prototype);
 function NavMenu(props) {
@@ -47,7 +48,7 @@ NavMenu.prototype.render = function render() {
   return (
     <div classes={classes.root}>
       <IconButton onClick={handleClick} className={classes.menuButton} color="inherit">
-        <MenuIcon />
+        <HomeIcon />
       </IconButton>
     {
       // <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose.bind(this, null)}>

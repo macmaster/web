@@ -1,5 +1,6 @@
 .*.s??
 node_modules
 package-lock.json
-site/videos/*
+site/js/main.bundle.js
 site/images/*
+site/videos/*

@@ -18,6 +18,7 @@ function Content(props) {
       console.log("video: %o", video);
       this.setState({ video, autoplay: e });
       e && e.preventDefault();
+      e && window.scrollTo(0, 0);
     },
     loadRandomVideo: (e) => {
       const SEED = Math.floor(Math.random() * this.props.videos.length)

@@ -2,7 +2,7 @@
   "name": "swish",
   "version": "0.1.0",
   "description": "swish.gq website",
-  "main": "site/js/index.js",
+  "main": "client/index.js",
   "scripts": {
     "build": "webpack --config config/webpack.js",
     "sass": "node-sass --recursive --output site/css site/scss"
