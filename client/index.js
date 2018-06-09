@@ -2,15 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // Navigation Header Bar
-import NavBar from "./NavBar";
-const options = [
-  { name: "Home", href: "", active: true, }, 
-  { name: "Google", href: "https://google.com", }, 
-  { name: "Github", href: "https://github.com", }, 
-  { name: "Youtube", href: "https://youtube.com", }, 
-];
+import NavBar from "./navbar/NavBar";
 var navbar = ReactDOM.render(
-  <NavBar brand="Videos" options={options} />,
+  <NavBar brand="Videos" />,
   document.getElementById("navbar")
 );
 
