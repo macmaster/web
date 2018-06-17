@@ -41,3 +41,4 @@ class NavBar extends React.Component {
 };
 
 export default withStyles(styles)(NavBar);
+

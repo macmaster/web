@@ -9,7 +9,7 @@ var navbar = ReactDOM.render(
 );
 
 // Videos Content
-import Content from "./Content";
+import Content from "./content/Content";
 var videos = require("./json/videos.json");
 var content = ReactDOM.render(
   <Content videos={videos} />,

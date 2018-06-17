@@ -32,3 +32,4 @@ class HomeButton extends React.Component {
 }
 
 export default withStyles(styles)(HomeButton);
+
