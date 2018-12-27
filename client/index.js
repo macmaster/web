@@ -1,18 +1,27 @@
-import React from "react";
+/**
+ * index.js
+ * Application entry point.
+ */
+
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-// Navigation Header Bar
-import NavBar from "./navbar/NavBar";
-var navbar = ReactDOM.render(
-  <NavBar brand="Videos" />,
-  document.getElementById("navbar")
-);
+import VideoGrid from 'content/Content';
+import NavBar from 'navbar/NavBar';
+const videos = require('json/videos.json');
 
-// Videos Content
-import Content from "./content/Content";
-var videos = require("./json/videos.json");
+// Application Content
+function Content(props) {
+  return (
+    <React.Fragment>
+      <NavBar brand="Swish" />
+      <VideoGrid videos={videos} />
+    </React.Fragment>
+  );
+}
+
 var content = ReactDOM.render(
-  <Content videos={videos} />,
-  document.getElementById("content")
+  <Content />,
+  document.getElementById('content')
 );
 

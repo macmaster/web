@@ -1,6 +1,10 @@
-.*.s??
+*.sw[a-z]
+
+# node dependencies
 node_modules
 package-lock.json
-site/js/main.bundle.js
+
+# ignore site assets
+site/js/main.js
 site/images/*
 site/videos/*

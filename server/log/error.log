@@ -1,9 +1,0 @@
-python: can't open file 'server/swish.py': [Errno 2] No such file or directory
- * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 854-215-487
-67.250.82.5 - - [29/Apr/2018 18:02:58] "[37mGET /videos HTTP/1.1[0m" 200 -
-67.250.82.5 - - [29/Apr/2018 18:03:10] "[37mGET /videos HTTP/1.1[0m" 200 -
-67.250.82.5 - - [29/Apr/2018 18:03:24] "[37mGET /videos HTTP/1.1[0m" 200 -
-67.250.82.5 - - [29/Apr/2018 18:46:46] "[37mGET /videos HTTP/1.1[0m" 200 -
