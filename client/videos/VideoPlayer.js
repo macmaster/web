@@ -23,6 +23,7 @@ const style = {
   },
   title: {
     fontSize: "2rem",
+    flexShrink: 1,
   },
   button: {
     background: 'linear-gradient(135deg, red 80%, orange 90%)',
@@ -47,7 +48,7 @@ VideoPlayer.prototype.render = function render() {
     <Paper className={classes.root}>
       <div className={classes.header}>
         <Typography variant="headline" className={classes.title}
-          color="inherit">{video.name}</Typography>
+          color="inherit" noWrap>{video.name}</Typography>
         <Button className={classes.button} onClick={refresh}>Random</Button>
       </div>
       <video className={classes.player} height={videoHeight}  

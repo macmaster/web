@@ -1,40 +1,32 @@
 /**
- * index.js
- * Application entry point.
+ * Application entry point
  */
 
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { MuiThemeProvider, withStyles } from '@material-ui/core/styles';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Fab from '@material-ui/core/Fab';
 import HomeIcon from '@material-ui/icons/Home';
-import { withStyles } from '@material-ui/core/styles';
 
-import NavBar from 'navbar/NavBar';
-import VideoGrid from 'content/Content';
+import SwishAppBar from 'nav/SwishAppBar';
+import TopButton from 'nav/TopButton';
+import VideoContent from 'videos/VideoContent';
+import { theme } from 'style/theme';
+import { videos } from 'videos/data/videos';
 
-const VIDEOS = require('data/videos.json');
-
-const AbsoluteFab =
-  withStyles(theme => ({
-    root: {
-      position: 'fixed',
-      bottom: 4 * theme.spacing.unit,
-      right: 4 * theme.spacing.unit,
-    },
-  }))(Fab);
+const repo = 'https://github.com/ronny-macmaster/web.git';
+const title = 'Swish';
 
 // Application Content
 function Content(props) {
   return (
-    <React.Fragment>
+    <MuiThemeProvider theme={theme}>
       <CssBaseline />
-      <NavBar title="Swish" />
-      <VideoGrid videos={VIDEOS} />
-      <AbsoluteFab component='a' href='#'
-        color='secondary'><HomeIcon /></AbsoluteFab>
-    </React.Fragment>
+      <SwishAppBar title={title} repo={repo} />
+      <VideoContent videos={videos} />
+      <TopButton variant='up' />
+    </MuiThemeProvider>
   );
 }
 
