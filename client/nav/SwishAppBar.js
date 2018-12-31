@@ -42,7 +42,7 @@ class SwishAppBar extends React.Component {
     );
 
     const title = (
-      <Typography className={classes.title} variant="title"
+      <Typography className={classes.title} variant="h6"
         color="inherit">
         {titleProp}
       </Typography>

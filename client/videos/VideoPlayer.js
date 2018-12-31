@@ -1,3 +1,7 @@
+/**
+ * Unified Video Player Component
+ */
+
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -14,7 +18,6 @@ const style = {
     margin: "10px auto",
     padding: "10px",
   },
-
   header: {
     display: "flex",
     alignItems: "center",
@@ -28,7 +31,6 @@ const style = {
   button: {
     background: 'linear-gradient(135deg, red 80%, orange 90%)',
   },
-
   player: {
     margin: "-4px",
     border: "2px solid purple",
@@ -47,13 +49,13 @@ VideoPlayer.prototype.render = function render() {
   return (
     <Paper className={classes.root}>
       <div className={classes.header}>
-        <Typography variant="headline" className={classes.title}
+        <Typography variant="h5" className={classes.title}
           color="inherit" noWrap>{video.name}</Typography>
         <Button className={classes.button} onClick={refresh}>Random</Button>
       </div>
       <video className={classes.player} height={videoHeight}  
         src={video.video} autoPlay={autoplay} controls></video>
-      <Typography color="inherit" variant="title">
+      <Typography color="inherit" variant="h6">
         Download: <a href={video.video} download>{video.video}</a>
       </Typography>
     </Paper>

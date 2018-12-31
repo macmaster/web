@@ -12,4 +12,7 @@ export const theme = createMuiTheme({
       main: purple[300]
     },
   },
+  typography: {
+    useNextVariants: true,
+  },
 });
